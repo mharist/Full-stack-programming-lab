@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Box Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Color Forge</h1>
+            <p>Generate colors dynamically.</p>
+        </header>
+
+        <main class="content-area">
+            <div class="input-section">
+                <div class="input-group">
+                    <label>Color 1</label>
+                    <input type="text" id="color1" placeholder="e.g., red, #ff0000">
+                </div>
+                <div class="input-group">
+                    <label>Color 2</label>
+                    <input type="text" id="color2" placeholder="e.g., blue, rgb(0,0,255)">
+                </div>
+                <div class="input-group">
+                    <label>Color 3</label>
+                    <input type="text" id="color3" placeholder="e.g., goldenrod">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="add-btn" class="btn primary-btn">Add Colors</button>
+                <button id="clear-btn" class="btn secondary-btn">Clear All</button>
+            </div>
+
+            <div id="box-container" class="box-container">
+                <!-- Boxes will appear here -->
+            </div>
+
+            <!-- Bonus: Display Window Info -->
+            <div class="info-panel">
+                <h3>Browser Info (BOM)</h3>
+                <p>Window Size: <span id="win-width">0</span> x <span id="win-height">0</span></p>
+                <p>Screen Size: <span id="screen-width">0</span> x <span id="screen-height">0</span></p>
+                <p>Browser: <span id="browser-info">-</span></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

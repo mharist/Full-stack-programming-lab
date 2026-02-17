@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Join Us</h1>
+            <p>Create your account today.</p>
+        </header>
+
+        <main class="form-container">
+            <form id="registration-form" novalidate>
+                <!-- Name Field -->
+                <div class="input-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="John Doe">
+                    <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="john@example.com">
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <!-- Age Field -->
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="18-60">
+                    <span class="error-msg" id="age-error"></span>
+                </div>
+
+                <!-- Password Field -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Min 6 characters">
+                    <span class="error-msg" id="password-error"></span>
+                </div>
+
+                <div class="controls">
+                    <button type="submit" class="btn primary-btn">Register Now</button>
+                </div>
+            </form>
+
+            <div id="success-message" class="success-box hidden">
+                <h3>Success!</h3>
+                <p>Your account has been created successfully.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

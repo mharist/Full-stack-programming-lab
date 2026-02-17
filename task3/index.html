@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header class="todo-header">
+            <h1>Task Master</h1>
+            <p>Focus on your top 3 priorities.</p>
+        </header>
+
+        <main class="todo-list">
+            <!-- Task 1 -->
+            <div class="task-row" id="task-1">
+                <input type="text" class="task-input" placeholder="Enter task 1...">
+                <div class="actions">
+                    <button class="btn complete-btn" title="Mark Complete">✓</button>
+                    <button class="btn remove-btn" title="Remove Task">✕</button>
+                </div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="task-row" id="task-2">
+                <input type="text" class="task-input" placeholder="Enter task 2...">
+                <div class="actions">
+                    <button class="btn complete-btn" title="Mark Complete">✓</button>
+                    <button class="btn remove-btn" title="Remove Task">✕</button>
+                </div>
+            </div>
+
+            <!-- Task 3 -->
+            <div class="task-row" id="task-3">
+                <input type="text" class="task-input" placeholder="Enter task 3...">
+                <div class="actions">
+                    <button class="btn complete-btn" title="Mark Complete">✓</button>
+                    <button class="btn remove-btn" title="Remove Task">✕</button>
+                </div>
+            </div>
+
+            <button id="reset-all-btn" class="btn secondary-btn">Reset All Tasks</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

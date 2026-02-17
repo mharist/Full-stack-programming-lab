@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="quiz-header">
+            <h1>JS Mastery Quiz</h1>
+            <p>Test your JavaScript knowledge dynamically.</p>
+        </header>
+
+        <main id="quiz-container" class="quiz-content">
+            <!-- Questions will be injected here by JS -->
+        </main>
+
+        <div id="result-container" class="result-box hidden">
+            <h2>Your Score</h2>
+            <div id="score-display" class="score">0 / 0</div>
+            <p id="feedback-message"></p>
+        </div>
+
+        <div class="controls">
+            <button id="submit-btn" class="btn primary-btn">Submit Quiz</button>
+            <button id="reset-btn" class="btn secondary-btn">Reset Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
